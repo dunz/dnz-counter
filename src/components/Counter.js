@@ -42,7 +42,7 @@ class Counter extends Component {
     }
 }
 
-const matStateToProps = (state) => {
+const mapStateToProps = (state) => {
     return {
         number: state.counter.number,
         color: state.ui.color
@@ -58,4 +58,4 @@ const mapDispatchToProps = (dispatch) => {
     }
 }
 
-export default connect(matStateToProps, mapDispatchToProps)(Counter);
+export default connect(mapStateToProps, mapDispatchToProps)(Counter);
